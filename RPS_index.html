@@ -10,24 +10,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<br>
-	    <div class="jumbotron">
-	      <h1 class="text-center">Rock, Paper, Scissors</h1>
-	    </div>
-	   	<div class="col-sm-4 span4" id="player-name">
-	    <form>
-		    	<div class="row">
-	 				<div class="span4">
-						<label for="player1-name">Player 1</label>
-						<input id="player1-name" type="text" placeholder="Name">
-						<button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
-	 				</div>
-	 				<br>
-				</div>
-	    </form>
-	   	</div>
+	<br>
+	<div class="jumbotron">
+		<h1 class="text-center">Rock, Paper, Scissors</h1>
 	</div>
+	<!-- Player information -->
+	<div class="container">
+		<div class="col-sm-4 span4" id="player-name">
+		<form>
+			<div class="row">
+				<div class="span4">
+					<label for="player1-name">Player: </label>
+					<input id="player1-name" type="text" placeholder="Name">
+					<button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+				</div>
+				<br>
+			</div>
+		</form>
+		</div>
+	</div>
+<!-- Game status -->
 <div class="container-fluid">
   <div class="row text-center">
       <div class="col-md-4"> 
@@ -51,6 +53,7 @@
       </div>
   </div>
 </div>
+<!-- Chat -->
 <div class="chat_window">
 	<div class="top_menu">
 		<div class="buttons">
@@ -67,12 +70,16 @@
 			<div class="send_message">
 				<div class="icon"></div>
 				<div class="text">Send</div>
-			</div></div></div>
-			<div class="message_template">
-				<li class="message">
-					<div class="avatar"></div>
-					<div class="text_wrapper">
-						<div class="text">
-						</div></div></li></div>
+			</div>
+	</div>
+</div>
+<div class="message_template">
+	<li class="message">
+		<div class="avatar"></div>
+		<div class="text_wrapper">
+			<div class="text"></div>
+		</div>
+	</li>
+</div>
 </body>
 </html>
