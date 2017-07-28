@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock, Paper, Scissors Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+	.cliente {
+		margin-top:10px;
+		border: #cdcdcd medium solid;
+		border-radius: 0px;
+		height:250px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<br>
+	    <div class="jumbotron">
+	      <h1 class="text-center">Rock, Paper, Scissors</h1>
+	    </div>
+	   	<div class="col-sm-4 span4" id="player-name">
+	    <form>
+		    	<div class="row">
+	 				<div class="span4">
+						<label for="player1-name">Player 1</label>
+						<input id="player1-name" type="text" placeholder="Name">
+						<button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+	 				</div>
+	 				<br>
+				</div>
+	    </form>
+	   	</div>
+	</div>
+<div class="container-fluid">
+  <div class="row text-center">
+      <div class="col-md-4"> 
+        <div class="cliente">
+        	<div id="player1-game">
+        		<h3>Waiting for player 1</h3>
+        	</div>     
+        </div>
+      </div>
+      <div class="col-md-4"> 
+        <div class="cliente">
+			<div id="game-status"></div>     
+        </div>
+      </div>
+      <div class="col-md-4"> 
+        <div class="cliente">
+			<div id="player2-game">
+        		<h3>Waiting for player 2</h3>
+			</div>      
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
